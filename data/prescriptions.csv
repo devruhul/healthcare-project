@@ -1,0 +1,17 @@
+prescription_id,patient_id,clinician_id,appointment_id,prescription_date,medication_name,dosage,frequency,duration_days,quantity,instructions,pharmacy_name,status,issue_date,collection_date
+RX001,P001,C001,A001,2025-09-20,Simvastatin,20mg,Once daily,28,28 tablets,Take with evening meal,Boots Pharmacy Birmingham,Issued,2025-09-20,
+RX002,P002,C009,A002,2025-09-20,Paracetamol,500mg,As required,7,16 tablets,Max 8 tablets in 24 hours,Superdrug Birmingham Central,Issued,2025-09-20,
+RX003,P003,C003,A003,2025-09-21,Ramipril,5mg,Once daily,28,28 tablets,Take in morning,Lloyds Pharmacy Solihull,Issued,2025-09-21,
+RX004,P004,C002,A004,2025-09-22,GTN Spray,400mcg,As required,30,1 spray bottle,Use for chest pain episodes,Boots Pharmacy Birmingham,Issued,2025-09-22,
+RX005,P006,C004,A006,2025-09-23,Metformin,500mg,Twice daily,28,56 tablets,Take with meals,Asda Pharmacy Sutton,Issued,2025-09-23,
+RX006,P008,C010,A008,2025-09-26,Folic Acid,5mg,Once daily,28,28 tablets,Take before food,Well Pharmacy Solihull,Issued,2025-09-26,
+RX007,P010,C002,A010,2025-09-28,Insulin Glargine,100units/ml,Once daily,28,1 pen,Inject at same time daily,Boots Pharmacy Birmingham,Issued,2025-09-28,
+RX008,P001,C001,,2025-09-15,Ibuprofen,400mg,Three times daily,7,21 tablets,Take with food,Boots Pharmacy Birmingham,Collected,2025-09-15,2025-09-16
+RX009,P003,C003,,2025-08-20,Amlodipine,5mg,Once daily,28,28 tablets,Take in morning,Lloyds Pharmacy Solihull,Collected,2025-08-20,2025-08-22
+RX010,P005,C005,A005,2025-09-25,Atorvastatin,40mg,Once daily,28,28,Take in evening,Heartlands Hospital Pharmacy,Issued,2025-09-25,2025-09-25
+asd,asd,asd,asd,2003-09-04,asd,asd,asd,23,23,asdas,das,da,2004-04-05,2025-08-04
+RX012,P007,C003,A007,2024-09-08,sdc,20mg,89,89,89,sdc,sca,Issued,2025-07-07,2025-07-07
+RX015,P009,C008,A005,2025-06-05,asc,5mg,6,7,89,hjbjh,bkjk,Collected,2025-05-07,2025-05-07
+RX020,P005,C010,A019,2022-09-09,hjbj,5mg,8,8,8,asx,8h9ih,Issued,2022-08-08,2022-09-08
+RX014,P004,C010,A022,2022-09-09,xdv,20mg,88,88,88,dcv,sdvcs,Issued,2022-09-09,2022-09-09
+RX014,P004,C007,A003,2022-06-09,dsf,20mg,23,23,23,sdf,sdf,Issued,2022-06-09,2022-06-09
