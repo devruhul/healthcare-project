@@ -6,7 +6,7 @@ import java.util.*;
 
 public class FacilityRepository {
 
-    private static final String CSV_PATH = "data/facilities.csv";
+    private static final File CSV_FILE = CsvUtil.dataFile("facilities.csv");
 
     private final List<Facility> facilities = new ArrayList<>();
     private final List<String[]> rawRows = new ArrayList<>();
@@ -21,7 +21,7 @@ public class FacilityRepository {
         facilities.clear();
         rawRows.clear();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(CSV_PATH))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(CSV_FILE))) {
 
             header = br.readLine();
             if (header == null)
@@ -95,7 +95,7 @@ public class FacilityRepository {
 
     private void writeAll() throws IOException {
 
-        try (PrintWriter pw = new PrintWriter(new FileWriter(CSV_PATH))) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(CSV_FILE))) {
 
             pw.println(header);
 

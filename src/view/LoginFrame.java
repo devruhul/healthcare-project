@@ -56,7 +56,7 @@ public class LoginFrame extends JFrame {
         login.addActionListener(e -> {
 
             User u = repo.authenticate(
-                    username.getText(),
+                    username.getText().trim(),
                     new String(password.getPassword()));
 
             if (u == null) {

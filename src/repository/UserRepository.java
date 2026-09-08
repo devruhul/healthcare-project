@@ -6,7 +6,7 @@ import java.util.*;
 
 public class UserRepository {
 
-    private static final String CSV = "data/users.csv";
+    private static final File CSV = CsvUtil.dataFile("users.csv");
     private final List<User> users = new ArrayList<>();
 
     public UserRepository() {
@@ -24,11 +24,18 @@ public class UserRepository {
 
             while ((line = br.readLine()) != null) {
                 String[] c = CsvUtil.splitCsvLine(line);
-                users.add(new User(c[0], c[1], c[2], c.length > 3 ? c[3] : ""));
+                if (c.length < 3) {
+                    continue;
+                }
+                users.add(new User(
+                        c[0].trim(),
+                        c[1].trim(),
+                        c[2].trim(),
+                        c.length > 3 ? c[3].trim() : ""));
             }
 
         } catch (IOException e) {
-            System.err.println("Failed to load users.csv");
+            System.err.println("Failed to load users.csv from " + CSV.getAbsolutePath());
         }
     }
 
@@ -59,4 +66,5 @@ public class UserRepository {
                     u.getLinkedId()));
         }
     }
+
 }

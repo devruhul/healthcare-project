@@ -6,7 +6,7 @@ import java.util.*;
 
 public class PrescriptionRepository {
 
-    private static final String CSV_PATH = "data/prescriptions.csv";
+    private static final File CSV_FILE = CsvUtil.dataFile("prescriptions.csv");
 
     private final List<Prescription> prescriptions = new ArrayList<>();
     private final List<String[]> rawRows = new ArrayList<>();
@@ -21,7 +21,7 @@ public class PrescriptionRepository {
         prescriptions.clear();
         rawRows.clear();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(CSV_PATH))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(CSV_FILE))) {
 
             header = br.readLine();
             if (header == null)
@@ -122,7 +122,7 @@ public class PrescriptionRepository {
 
     private void writeAll() throws IOException {
 
-        try (PrintWriter pw = new PrintWriter(new FileWriter(CSV_PATH))) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(CSV_FILE))) {
             pw.println(header);
 
             for (String[] r : rawRows) {

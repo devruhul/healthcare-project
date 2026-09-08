@@ -1,9 +1,26 @@
 package repository;
 
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CsvUtil {
+
+    public static File dataFile(String fileName) {
+        Path current = Path.of("").toAbsolutePath();
+
+        while (current != null) {
+            Path candidate = current.resolve("data").resolve(fileName);
+            if (Files.isRegularFile(candidate)) {
+                return candidate.toFile();
+            }
+            current = current.getParent();
+        }
+
+        return Path.of("data", fileName).toFile();
+    }
 
     /**
      * Splits a CSV line safely, respecting quoted values.
