@@ -38,8 +38,6 @@ public class PrescriptionPanel extends JPanel {
         add(buttons(), BorderLayout.SOUTH);
     }
 
-    /* ================= TABLE ================= */
-
     private JPanel buttons() {
 
         JPanel p = new JPanel();
@@ -83,8 +81,6 @@ public class PrescriptionPanel extends JPanel {
             });
         }
     }
-
-    /* ================= CRUD ================= */
 
     private void add() {
 
@@ -143,12 +139,6 @@ public class PrescriptionPanel extends JPanel {
         JOptionPane.showMessageDialog(this, m, "Error",
                 JOptionPane.ERROR_MESSAGE);
     }
-
-    /*
-     * =====================================================
-     * INNER FORM CLASS (LIKE PATIENT PANEL)
-     * =====================================================
-     */
 
     private static class PrescriptionForm {
 
@@ -216,8 +206,6 @@ public class PrescriptionPanel extends JPanel {
                     return true;
             }
         }
-
-        /* ================= VALIDATION ================= */
 
         private boolean validate() {
 

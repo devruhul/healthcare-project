@@ -130,8 +130,6 @@ public class ClinicianPanel extends JPanel {
                 "Error", JOptionPane.ERROR_MESSAGE);
     }
 
-    /* ================= FORM ================= */
-
     private static class ClinicianForm {
 
         private final JTextField[] f = new JTextField[11];

@@ -131,8 +131,6 @@ public class StaffPanel extends JPanel {
                 "Error", JOptionPane.ERROR_MESSAGE);
     }
 
-    /* ================= FORM ================= */
-
     private static class StaffForm {
 
         private final JTextField[] f = new JTextField[12];

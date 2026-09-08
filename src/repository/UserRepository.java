@@ -19,7 +19,7 @@ public class UserRepository {
 
         try (BufferedReader br = new BufferedReader(new FileReader(CSV))) {
 
-            br.readLine(); // header
+            br.readLine();
             String line;
 
             while ((line = br.readLine()) != null) {

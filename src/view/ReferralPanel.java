@@ -42,8 +42,6 @@ public class ReferralPanel extends JPanel {
         add(buttons(), BorderLayout.SOUTH);
     }
 
-    /* ================= TABLE ================= */
-
     private JPanel buttons() {
 
         JPanel p = new JPanel();
@@ -88,8 +86,6 @@ public class ReferralPanel extends JPanel {
             });
         }
     }
-
-    /* ================= CRUD ================= */
 
     private void add() {
 
@@ -148,12 +144,6 @@ public class ReferralPanel extends JPanel {
         JOptionPane.showMessageDialog(this, m,
                 "Error", JOptionPane.ERROR_MESSAGE);
     }
-
-    /*
-     * =====================================================
-     * INNER REFERRAL FORM (MVC-CORRECT)
-     * =====================================================
-     */
 
     private static class ReferralForm {
 
@@ -233,8 +223,6 @@ public class ReferralPanel extends JPanel {
                     return true;
             }
         }
-
-        /* ================= VALIDATION ================= */
 
         private boolean validate() {
 

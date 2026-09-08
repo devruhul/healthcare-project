@@ -16,15 +16,10 @@ public class ReferralManager {
         return instance;
     }
 
-    /**
-     * Saves referral to CSV and generates TXT output
-     */
     public void processReferral(Referral r, ReferralRepository repo) throws IOException {
 
-        // ✅ Correct repository method
         repo.addReferral(r);
 
-        // ✅ Generate output file
         writeFile(r);
     }
 

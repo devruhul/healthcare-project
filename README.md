@@ -11,6 +11,24 @@ A desktop healthcare administration application built with Java Swing. It provid
 - Store application data in editable CSV files
 - Patient self-registration using a valid patient ID
 
+## Screenshots
+
+### Patient Management
+
+![Patient management table](assets/screenshots/patient-management.png)
+
+### Appointments
+
+![Appointment management table](assets/screenshots/appointments.png)
+
+### Prescriptions
+
+![Prescription management table](assets/screenshots/prescriptions.png)
+
+### Referrals
+
+![Referral management table](assets/screenshots/referrals.png)
+
 ## Requirements
 
 - Java Development Kit (JDK) 11 or later
@@ -54,6 +72,7 @@ The application can also be run directly from an IDE by opening `src/Main.java`.
 
 ```text
 healthcare-project/
+├── assets/screenshots/    # Application screenshots used in this README
 ├── data/                  # CSV data used by the application
 ├── output/
 │   ├── prescriptions/     # Generated prescription text files

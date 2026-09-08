@@ -9,7 +9,6 @@ public class PrescriptionManager {
 
     private PrescriptionManager() {
     }
-    
 
     public static synchronized PrescriptionManager getInstance() {
         if (instance == null) {
@@ -22,8 +21,7 @@ public class PrescriptionManager {
             Prescription p,
             PrescriptionRepository repo) throws IOException {
 
-                // Add prescription to repository and write to files
-        repo.add(p); // CSV
-        PrescriptionWriter.write(p); // TXT
+        repo.add(p);
+        PrescriptionWriter.write(p);
     }
 }

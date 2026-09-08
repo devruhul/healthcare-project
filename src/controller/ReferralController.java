@@ -17,7 +17,7 @@ public class ReferralController {
     }
 
     public void add(Referral r) throws IOException {
-        manager.processReferral(r, repository); // CSV + TXT
+        manager.processReferral(r, repository);
     }
 
     public void update(int index, Referral r) throws IOException {

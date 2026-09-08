@@ -17,8 +17,6 @@ public class ReferralRepository {
         load();
     }
 
-    /* ================= LOAD ================= */
-
     private void load() {
 
         referrals.clear();
@@ -67,8 +65,6 @@ public class ReferralRepository {
         }
     }
 
-    /* ================= UTIL ================= */
-
     private String get(String[] row, Map<String, Integer> index, String key) {
         Integer i = index.get(key);
         return (i != null && i < row.length) ? row[i].trim() : "";
@@ -83,8 +79,6 @@ public class ReferralRepository {
         }
         return v;
     }
-
-    /* ================= CRUD ================= */
 
     public List<Referral> getAll() {
         return referrals;
@@ -116,8 +110,6 @@ public class ReferralRepository {
         writeAll();
     }
 
-    /* ================= REQUIRED BY CONTROLLER ================= */
-
     public void updateAll() throws IOException {
         writeAll();
     }
@@ -128,8 +120,6 @@ public class ReferralRepository {
         rawRows.remove(index);
         writeAll();
     }
-
-    /* ================= WRITE ================= */
 
     private void writeAll() throws IOException {
 

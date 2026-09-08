@@ -22,11 +22,6 @@ public class CsvUtil {
         return Path.of("data", fileName).toFile();
     }
 
-    /**
-     * Splits a CSV line safely, respecting quoted values.
-     * Example:
-     * "Hello, world",Test → [Hello, world] [Test]
-     */
     public static String[] splitCsvLine(String line) {
 
         List<String> tokens = new ArrayList<>();
@@ -50,10 +45,6 @@ public class CsvUtil {
         return tokens.toArray(new String[0]);
     }
 
-    /**
-     * Safely gets a column value by index.
-     * Prevents IndexOutOfBounds and null errors.
-     */
     public static String get(String[] cols, Integer index) {
 
         if (cols == null || index == null)

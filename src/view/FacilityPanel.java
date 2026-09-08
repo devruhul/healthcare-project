@@ -129,8 +129,6 @@ public class FacilityPanel extends JPanel {
                 "Error", JOptionPane.ERROR_MESSAGE);
     }
 
-    /* ================= FORM ================= */
-
     private static class FacilityForm {
 
         private final JTextField[] f = new JTextField[11];
